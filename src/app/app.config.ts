@@ -1,3 +1,3 @@
 export class AppConfig {
-    public readonly apiUrl='dndchronicles-api.herokuapp.com';
+    public readonly apiUrl='https://dndchronicles-api.herokuapp.com';
 };

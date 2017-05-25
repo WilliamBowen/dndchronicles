@@ -36,8 +36,10 @@ export class UserService {
 
   // private helper methods
   private url(path?: string) : string {
-    if(path)
+    if(path){
+      console.log(this._config.apiUrl + "/users/" + path);
       return this._config.apiUrl + "/users/" + path;
+    }
     return this._config.apiUrl + "/users";
   }
 
