@@ -20,18 +20,15 @@ export class UserService {
   }
 
   addUser(user: User) {
-    return this._http.post(this.url('register'), user, this.jwt())
-      .map((res: Response) => res.json());
+    return this._http.post(this.url('register'), user, this.jwt());
   }
 
   updateUser(user: User) {
-    return this._http.put(this.url(user._id), user, this.jwt())
-      .map((res: Response) => res.json());
+    return this._http.put(this.url(user._id), user, this.jwt());
   }
 
   deleteUser(_id: string) {
-    return this._http.delete(this.url(_id), this.jwt())
-      .map((res: Response) => res.json());
+    return this._http.delete(this.url(_id), this.jwt());
   }
 
   // private helper methods
