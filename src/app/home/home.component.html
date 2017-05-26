@@ -1,6 +1,17 @@
 <div class="col-md-6 col-md-offset-3">
     <h1>Hi {{ currentUser.firstName }}!</h1>
-    <p>You're logged into the Dungeons and Dragons Chronicles App</p>
+    <p>You're logged into the Dungeons and Dragons Chronicles App.</p>
+    <p>This website is currently being constructed to act as a collection of journals
+       for characters that are playing in the Dungeons and Dragons campaign that I am running.
+       My players will be given access to the site and will be able to tell the stories of their
+       adventures through the eyes of their characters.</p>
+    <p>For now the only options I have implemented are user registration and login. Eventually I will
+       be adding features that will allow me to create a campaign, add sessions to that campaign, and
+       then allow my players to create characters for the campaign, and log their stories for each session.</p>
+    <p>Beyond that, I would like to expand things so that other Dungeon Masters can use this site with their
+       own players. I believe this site will allow them to gain a better understanding of their players, and
+       will let the DMs better run their campaigns. 
+    </p>
     <h3>All registered users:</h3>
     <ul>
         <li *ngFor="let user of users">
